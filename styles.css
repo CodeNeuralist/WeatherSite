@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.weather-container {
+    background-image: url('image.png'); /* Укажите путь к вашему изображению */
+    background-size: cover;
+    background-blend-mode: multiply; /* Это делает фон полупрозрачным */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-content {
+    background-color: rgba(255, 255, 255, 0.5); /* Полупрозрачный белый цвет для контейнера */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.weather-content h1 {
+    margin-top: 0;
+}
+
+#weather-info {
+    margin-top: 20px;
+}
+
+/* Добавляем стили для поля ввода текста */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+/* Стилизуем кнопку */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Зеленый цвет */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* При наведении курсора на кнопку */
+button:hover {
+    background-color: #45a049; /* Темно-зеленый цвет */
+}
