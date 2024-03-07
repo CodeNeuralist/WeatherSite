@@ -9,7 +9,7 @@ function getWeather() {
 
     const weatherInfo = document.getElementById('weather-info');
 
-    const apiKey = 'a6c1e799d1ad214e860f917a29bcb6bd';
+    const apiKey = process.env.API_KEY;
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
 
     fetch(apiUrl)
